@@ -52,7 +52,7 @@ const NotificationItem = memo(({ sender, _id, handler }) => {
             width={"100%"}
         >
 
-          <Avatar src={avatar}/>
+          <Avatar />
 
             <Typography
                 variant='body1'

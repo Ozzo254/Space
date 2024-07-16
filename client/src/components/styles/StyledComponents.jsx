@@ -24,3 +24,4 @@ export const Link = styled(LinkComponent)`
     }
 `;
 
+export const InputBox = {}

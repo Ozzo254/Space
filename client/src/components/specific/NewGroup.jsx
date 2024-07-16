@@ -1,16 +1,14 @@
 import React, { useState } from 'react'
+import { useInputValidation } from '6pp'
 import { 
-  Avatar,
   Button,
   Dialog, 
-  DialogTitle, 
-  ListItem, 
+  DialogTitle,  
   Stack, 
   TextField, 
   Typography} from '@mui/material'
 import { sampleUsers } from '../../constants/sampleData'
 import UserItem from '../shared/UserItem'
-import { useInputValidation } from '6pp'
 
 const NewGroup = () => {
   const groupName = useInputValidation("");
@@ -20,12 +18,12 @@ const NewGroup = () => {
 
   const selectMemberHandler = (id) => {
 
-    setMembers(prev =>
-       prev.map(user =>
-         user._id === id ? 
-         { ...user, isAdded: !user.isAdded } : 
-         user)
-        );
+    // setMembers(prev =>
+      //  prev.map(user =>
+      //    user._id === id ? 
+      //    { ...user, isAdded: !user.isAdded } : 
+      //    user)
+      //   );
 
     setSelectedMembers((prev) => prev.includes(id) 
     ? prev.filter((currElement) => currElement !== id) 
@@ -42,8 +40,11 @@ const NewGroup = () => {
   console.log(selectedMembers);
   
   const submitHandler = () => {};
+
+  const closeHandler = () => {};
+
   return (
-    <Dialog open>
+    <Dialog open onClose={closeHandler}>
       <Stack 
         p={{ xs: "1rem", sm: "3rem"}}
         spacing={"2rem"}

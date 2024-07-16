@@ -69,7 +69,7 @@ const Header = () => {
         flexGrow: 1,
         }}
       height={'4rem'}
-      // marginBottom={'1rem'}    style between header and Grid element in AppLayout component
+      marginBottom={'1.3rem'}   // style between header and Grid element in AppLayout component
     >
       <AppBar 
         position='static'
