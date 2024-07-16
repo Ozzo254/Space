@@ -23,7 +23,7 @@ run cmd:
 
 run cmd:
     npm i,
-    npm i @mui/material @emotion/react @emotion/styled,
+    npm i @mui/material @emotion/react @emotion/styled
     npm i react-router-dom moment 6pp,
     npm install --save chart.js react-chartjs-2
     npm i react-hot-toast react-helmet-async
@@ -35,5 +35,6 @@ run cmd:
 
 
 ### PROGRESS
->>>> src/components/shared/AvatarCard.jsx       ---timestamp[02:11:00]---
+>>>> src/components/shared/AvatarCard.jsx       ---timestamp[02:56:10]---
 >>>> fix newMessageAlert.count
+>>>> fix ChatItem selected when
