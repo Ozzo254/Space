@@ -30,7 +30,12 @@ const Chat = () => {
       <form style={{
         height: "100%",
       }}>
-        <Stack>
+        <Stack 
+          direction={"row"} 
+          height={"100%"}
+          padding={"1rem"}
+          alignItems={"center"}
+          position={"relative"}>
           <IconButton>
             <AttachFileIcon />
           </IconButton>
