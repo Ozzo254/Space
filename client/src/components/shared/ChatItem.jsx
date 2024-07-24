@@ -31,7 +31,8 @@ const ChatItem = ({
                 backgroundColor: sameSender ? "black" : "unset",
                 color: sameSender ? "white" : "unset",
                 position: "relative",
-            }}>
+            }}
+        >
                 {/* Avatar Card */}
                 <AvatarCard avatar={avatar} />
 
@@ -61,7 +62,7 @@ const ChatItem = ({
                         }}
                     />
                 )}
-            </div>
+        </div>
     </Link>
   )
 }

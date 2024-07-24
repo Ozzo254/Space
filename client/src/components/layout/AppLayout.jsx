@@ -7,8 +7,10 @@ import { sampleChats } from '../../constants/sampleData';
 import { useParams } from 'react-router-dom';
 import Profile from '../specific/Profile';
 
-const AppLayout = () => 
+const AppLayout = () =>
+
     (WrappedComponent) => {
+
   return (props) => {
 
     const params = useParams();
