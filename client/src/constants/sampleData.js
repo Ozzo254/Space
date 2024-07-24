@@ -1,5 +1,5 @@
 import myAvatar from '../assets/me.jpg'
-import Chat from '../Pages/Chat';
+// import Chat from '../Pages/Chat';
 
 export const sampleChats = [
     {

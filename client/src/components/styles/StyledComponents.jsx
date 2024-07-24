@@ -1,6 +1,5 @@
 import { styled } from '@mui/material'
-// import {styled, Link as LinkComponent} from '@mui/material'
-import { Link as LinkComponent } from 'react-router-dom'
+import { Link as LinkComponent } from 'react-router-dom';
 import { grayColor } from '../../constants/color';
 
 

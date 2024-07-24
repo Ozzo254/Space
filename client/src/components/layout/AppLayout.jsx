@@ -7,9 +7,7 @@ import { sampleChats } from '../../constants/sampleData';
 import { useParams } from 'react-router-dom';
 import Profile from '../specific/Profile';
 
-const AppLayout = () =>
-
-    (WrappedComponent) => {
+const AppLayout = () => (WrappedComponent) => {
 
   return (props) => {
 
