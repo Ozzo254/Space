@@ -53,7 +53,7 @@ const App = () => {
               />
 
               <Route 
-                path='/chat/chat:Id' 
+                path='/chat/:chatId' 
                 element={<Chat />} 
               />
 
@@ -76,7 +76,7 @@ const App = () => {
             />
         
             <Route 
-              path='*' 
+              path='' 
               element={<NotFound />} 
             />
 

@@ -1,11 +1,17 @@
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import React, { memo } from 'react'
 import { lightBlue } from '../../constants/color';
+import moment from 'moment';
+import { fileFormat } from '../../lib/features';
+import RenderAttachment from './RenderAttachment';
 
 const MessageComponent = ({ message, user }) => {
     const { sender, content, attachments = [], createdAt } = message;
 
     const sameSender = sender ?._id === user?._id;
+    
+    const timeAgo = moment(createdAt).fromNow();
+
   return (
     <div
         style={{
@@ -17,16 +23,38 @@ const MessageComponent = ({ message, user }) => {
             width: "fit-content",
         }}
     >
+        {/* Sender Name */}
+
         {
             !sameSender && <Typography color={lightBlue} fontWeight={"600"} variant='caption'>{sender.name}</Typography>
         }
+
+        {/* Messsage content */}
 
         {
             content && <Typography>{content}</Typography>
         }
 
         {/* Attachment */}
-        <Typography>{}</Typography>
+
+        {
+            attachments.length > 0 &&
+            attachments.map((Attachment, index) =>{
+                const url = Attachment.url;
+                const file = fileFormat(url);
+
+                return (
+                <Box key={index}>
+                    <a href={url} target='_blank' download style={{
+                        color: "black",
+                    }}>
+                        {RenderAttachment( file, url)}
+                    </a>
+                </Box>
+                )
+            })
+        }
+        <Typography variant='caption' color={"text.secondary"} >{timeAgo}</Typography>
     </div>
   )
 }

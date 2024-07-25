@@ -37,12 +37,12 @@ const Chat = () => {
       >
         {/** Messages Render **/}
         {sampleMessage.map((i) => (
-          <MessageComponent message={i} user={user} />
+          <MessageComponent key={i._id} message={i} user={user} />
         ))}
       </Stack>
 
       <form style={{
-        height: "100%",
+        height: "100px",
       }}>
         <Stack 
           direction={"row"} 
