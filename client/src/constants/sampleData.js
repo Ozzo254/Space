@@ -3,20 +3,122 @@ import myAvatar from '../assets/me.jpg'
 
 export const sampleChats = [
     {
-    avatar: [myAvatar],
-    name: 'M33k Rews',
-    _id: "1",
-    groupChat: "false",
-    members: ["1", "2"],
+        avatar: [myAvatar],
+        name: 'M33k Rews',
+        _id: "1",
+        groupChat: "false",
+        members: ["1", "2"],
     },
 
     {
-    avatar: [myAvatar],
-    name: 'Zippy Tabs',
-    _id: "2",
-    groupChat: "false",
-    members: ["1", "2"],
-    },
+        avatar: [myAvatar],
+        name: 'Zippy Tabs',
+        _id: "2",
+        groupChat: "false",
+        members: ["1", "2"],
+    }
+    // ,{
+    //     avatar: [myAvatar],
+    //     name: 'M33k Rews',
+    //     _id: "3",
+    //     groupChat: "false",
+    //     members: ["1", "2"],
+    // },
+
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'Zippy Tabs',
+    //     _id: "4",
+    //     groupChat: "false",
+    //     members: ["1", "2"],
+    // },
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'M33k Rews',
+    //     _id: "5",
+    //     groupChat: "false",
+    //     members: ["1", "2"],
+    // },
+
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'Zippy Tabs',
+    //     _id: "6",
+    //     groupChat: "false",
+    //     members: ["1", "2"],
+    // },{
+    //     avatar: [myAvatar],
+    //     name: 'M33k Rews',
+    //     _id: "7",
+    //     groupChat: "false",
+    //     members: ["1", "2"],
+    // },
+
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'Zippy Tabs',
+    //     _id: "8",
+    //     groupChat: "false",
+    //     members: ["1", "2"],
+    // },
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'M33k Rews',
+    //     _id: "9",
+    //     groupChat: "false",
+    //     members: ["1", "2"],
+    // },
+
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'Zippy Tabs',
+    //     _id: "10",
+    //     groupChat: "false",
+    //     members: ["1", "2"],
+    // },{
+    //     avatar: [myAvatar],
+    //     name: 'M33k Rews',
+    //     _id: "11",
+    //     groupChat: "false",
+    //     members: ["1", "2"],
+    // },
+
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'Zippy Tabs',
+    //     _id: "12",
+    //     groupChat: "false",
+    //     members: ["1", "2"],
+    // },
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'M33k Rews',
+    //     _id: "13",
+    //     groupChat: "false",
+    //     members: ["1", "2"],
+    // },
+
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'Zippy Tabs',
+    //     _id: "14",
+    //     groupChat: "false",
+    //     members: ["1", "2"],
+    // },{
+    //     avatar: [myAvatar],
+    //     name: 'M33k Rews',
+    //     _id: "15",
+    //     groupChat: "false",
+    //     members: ["1", "2"],
+    // },
+
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'Zippy Tabs',
+    //     _id: "16",
+    //     groupChat: "false",
+    //     members: ["1", "2"],
+    // },
     // {
     //     avatar: [myAvatar,
     //          "https://www.w3schools.com/howto/img_avatar.png", 
@@ -34,13 +136,91 @@ export const sampleUsers = [
         avatar: [myAvatar],
         name: 'M33k Rews',
         _id: "1",
-        },
-    
-        {
+    },
+
+    {
         avatar: [myAvatar],
         name: 'Zippy Tabs',
         _id: "2",
-        },
+    },
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'M33k Rews',
+    //     _id: "3",
+    // },
+
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'Zippy Tabs',
+    //     _id: "4",
+    // },
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'M33k Rews',
+    //     _id: "5",
+    // },
+
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'Zippy Tabs',
+    //     _id: "6",
+    // },
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'M33k Rews',
+    //     _id: "7",
+    // },
+
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'Zippy Tabs',
+    //     _id: "8",
+    // },
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'M33k Rews',
+    //     _id: "9",
+    // },
+
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'Zippy Tabs',
+    //     _id: "10",
+    // },
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'M33k Rews',
+    //     _id: "11",
+    // },
+
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'Zippy Tabs',
+    //     _id: "12",
+    // },
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'M33k Rews',
+    //     _id: "13",
+    // },
+
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'Zippy Tabs',
+    //     _id: "14",
+    // },
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'M33k Rews',
+    //     _id: "15",
+    // },
+
+    // {
+    //     avatar: [myAvatar],
+    //     name: 'Zippy Tabs',
+    //     _id: "16",
+    // },
+
 ]
 
 export const sampleNotifications = [

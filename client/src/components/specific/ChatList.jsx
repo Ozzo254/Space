@@ -1,6 +1,7 @@
 import React from 'react'
-import { Stack } from '@mui/material'
+import { autocompleteClasses, Stack } from '@mui/material'
 import ChatItem from '../shared/ChatItem'
+import { bgGradient } from '../../constants/color'
 
 const ChatList = ({
     w = '100%',
@@ -18,7 +19,12 @@ const ChatList = ({
   return (
     <Stack 
         width={w} 
+        height={"100%"}
         direction={"column"}
+        overflow={"auto"}
+        // sx={{
+        //     backgroundImage: bgGradient,
+        // }}
     >
         {chats?.map((data, index ) => {
             const{
