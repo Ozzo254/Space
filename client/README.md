@@ -35,6 +35,6 @@ run cmd:
 
 
 ### PROGRESS
->>>> src/components/shared/AvatarCard.jsx       ---timestamp[05:19:40]---
+>>>> src/components/shared/AvatarCard.jsx       ---timestamp[05:43:00]---
 >>>> fix newMessageAlert.count
->>>> fix ChatItem selected when
+>>>> fix ChatItem selected when !done path for chatId

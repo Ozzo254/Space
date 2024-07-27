@@ -91,15 +91,15 @@ const App = () => {
               element={<Dashboard />}
             />
             <Route 
-              path='/admin/users-management' 
+              path='/admin/users' 
               element={<UsersManagement />}
             />
             <Route 
-              path='/admin/chats-management' 
+              path='/admin/chats' 
               element={<ChatsManagement />}
             />
             <Route 
-              path='/admin/messages-management' 
+              path='/admin/messages' 
               element={<MessagesManagement />}
             />
         
