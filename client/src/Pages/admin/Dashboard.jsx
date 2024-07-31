@@ -20,6 +20,10 @@ import {
   SearchField, 
 } from '../../components/styles/StyledComponents'
 import { matBlack } from '../../constants/color'
+import { 
+  LineChart, 
+  DoughnutChart, 
+} from "../../components/specific/Charts";
 
 const Dashboard = () => {
   const Appbar = (
@@ -84,9 +88,21 @@ const Dashboard = () => {
       <Container component={"main"}>
         {Appbar}
         <Stack
-          direction={"row"}
-          spacing={"2rem"}
+          direction={{
+            xs: 'column',
+            md: "row",
+          }}
+          // spacing={"2rem"}
           flexWrap={"wrap"}
+          justifyContent={"center"}
+          alignItems={{
+            xs: "center",
+            lg: "stretch",
+          }}
+          sx={{
+            gap: "2rem",
+            }
+          }
         >
           <Paper
             elevation={3}
@@ -94,14 +110,16 @@ const Dashboard = () => {
               padding: "2rem 3.5rem",
               borderRadius: "1rem",
               width: "100%",
-              maxWidth: "45rem",
-              height: "25rem"
+              maxWidth: "30rem",
+              // height: "25rem"
             }}
           >
             <Typography variant='h4' margin={"2rem 0"}>
               Last Messages
             </Typography>
-            {"chat"}
+
+            <LineChart value={[23, 56, 33, 67, 35, 2]} />
+
           </Paper>
           <Paper
             elevation={3}
@@ -118,10 +136,16 @@ const Dashboard = () => {
               position: "relative",
               width: "100%",
               maxWidth: "25rem",
-              height: "25rem"
+              // height: "25rem"
             }}
           >
-            {"MAndazi Chat"}
+            <DoughnutChart 
+              labels={[
+                "single Chats", 
+                "Group Chats", 
+              ]}
+              value={[23, 66]}
+            />
             <Stack
               position={"absolute"}
               direction={"row"}
